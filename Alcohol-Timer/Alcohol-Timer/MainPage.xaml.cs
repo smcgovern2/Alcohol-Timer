@@ -34,7 +34,7 @@ namespace Alcohol_Timer
                 }
                 else
                 {
-                    Lbl_Date.Text = $"You can drink alcohol in {drinkingAge.Subtract(ts).TotalDays.ToString("F0")} Days";
+                    Lbl_Date.Text = $"You can drink alcohol in {(drinkingAge.Subtract(ts).TotalDays/365).ToString("F0")} Years";
                 }
             }
         }
